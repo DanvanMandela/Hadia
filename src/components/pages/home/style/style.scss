@@ -1,0 +1,25 @@
+.custom-container {
+    max-width: 1440px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .explore-banner {
+    .explore-banner--image {
+      background: url("../../../../assets/banner9.jpg") center center/cover;
+      padding-bottom: 100%;
+    }
+
+    .button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+  }

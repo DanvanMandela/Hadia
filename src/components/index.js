@@ -1,0 +1,7 @@
+export { default as Home } from './pages/home/Home'
+export { default as Navbar } from './pages/nav/Navbar'
+export { default as Footer } from './pages/footer/Footer'
+export { default as About } from './pages/about/About'
+export { default as Shop } from './pages/shop/Shop'
+export { default as Cart } from './pages/cart/Cart'
+export {default as Checkout} from './pages/checkout/Checkout'
