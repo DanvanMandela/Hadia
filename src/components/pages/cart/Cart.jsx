@@ -2,12 +2,12 @@ import React from 'react'
 import '../../../style/bootstrap.css'
 import useStyle from '../home/style/Style'
 import CartItem from './cartItem/CartItem'
-import { List, ListItem, Link, Container, Button, Typography } from '@material-ui/core'
-import { AddShoppingCart } from '@material-ui/icons'
+import { List, ListItem, Container, Button, Typography } from '@material-ui/core'
 import '../../../style/layout.scss'
 import '../../../style/utils.scss'
 import cartIcon from '../../../assets/add-to-basket.png'
 import arrowBackIcon from '../../../assets/icon/arrow-long-right.svg'
+import { Link} from 'react-router-dom'
 
 
 const Cart = ({ cart, handleUpdateCartQuantity, handleRemoveFromCart, handleEmptyCart }) => {
@@ -95,19 +95,16 @@ const Cart = ({ cart, handleUpdateCartQuantity, handleRemoveFromCart, handleEmpt
                                     </li>
                                 </ul>
 
-                                <Button href={'/checkout'} className="checkout-confirm-buttons h-48 px-3 flex-grow-1 border bg-transparent border-color-gray500 font-color-light mb-2 mb-sm-0 mr-sm-2 no-print">
+                                <Button  component={Link} to="/checkout"  className="checkout-confirm-buttons h-48 px-3 flex-grow-1 border bg-transparent border-color-black font-color-light mb-2 mb-sm-0 mr-sm-2 no-print">
                                         Checkout
                                  </Button>
 
-
+        
                             </div>
                         </div>
 
                         <div class="mb-3">
                             <div class="pt-4">
-
-
-
                                 <div class="collapse" id="collapseExample">
                                     <div class="mt-3">
                                         <div class="md-form md-outline mb-0">
@@ -145,11 +142,12 @@ const Cart = ({ cart, handleUpdateCartQuantity, handleRemoveFromCart, handleEmpt
 
                 <h2 class="text-primary">No Items Yet Keep Shopping</h2>
                 <div className="d-flex align-items-center justify-content-center mt-3 mb-5">
-                    <Link href="/shop">
-                        <a className="d-flex py-3 align-items-center font-color-black borderbottom border-color-black">
+                    
+                    <Typography component={Link} to='/shop'>
+                    <a className="d-flex py-3 align-items-center font-color-black borderbottom border-color-black">
                             <img src={arrowBackIcon} />
                         </a>
-                    </Link>
+                    </Typography>
                 </div>
             </p>
         </div>
