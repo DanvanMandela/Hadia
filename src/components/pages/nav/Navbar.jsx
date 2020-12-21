@@ -49,8 +49,8 @@ const Navbar = ({ totalItems }) => {
                                 Contact
                     </Typography>}
                     </ul>
-                    
-                <ul >
+
+                    <ul >
                         <div className={classes.grow}>
                             {location.pathname != "/cart" && (
                                 <div className={classes.button} style={{ marginLeft: "auto" }}>
@@ -63,8 +63,8 @@ const Navbar = ({ totalItems }) => {
                                 </div>)}
                         </div>
                     </ul>
-            
-             </Toolbar>
+
+                </Toolbar>
             </AppBar>
 
         </>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { commerce } from './lib/Commerce'
-import { Navbar, Home, About, Footer, Shop, Cart, Checkout,Contacts } from './components'
+import { Navbar, Home, About, Footer, Shop, Cart, Checkout,Contacts,BootstrapNavbar } from './components'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 
@@ -80,11 +80,10 @@ const App = () => {
 
     }, [])
 
-
     return (
         <Router>
             <div>
-                <Navbar totalItems={cart.total_items} />
+                <BootstrapNavbar totalItems={cart.total_items} />
                 <Switch>
                     <Route exact path="/">
                         <Home products={products} onAddToCart={handleAddToCart} />
